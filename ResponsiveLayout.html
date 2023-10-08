@@ -16,6 +16,10 @@
             background-color: #bfbfbf;
         }
 
+        p {
+            text-align: justify;
+        }
+
         .header {
             font-size: 30px;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -131,6 +135,47 @@
                 flex-direction: column;
                 width: 100%;
                 padding-left: 0;
+            }
+
+            .card h2,
+            h5,
+            h3 {
+                text-align: center;
+            }
+
+        }
+
+        @media screen and (min-width:401px) and (max-width:768px) {
+            .container {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .rightcolumn,
+            .leftcolumn {
+                flex-direction: column;
+                width: 100%;
+                padding-left: 0;
+            }
+
+            .topnav a {
+                flex-direction: column;
+                float: none;
+            }
+
+            #float-right {
+                float: none;
+            }
+
+            .card h2,
+            h5,
+            h3 {
+                text-align: center;
+            }
+
+            .row {
+                width: 80%;
+                margin: 0 auto;
             }
         }
     </style>
